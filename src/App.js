@@ -7,6 +7,7 @@ function App() {
       {/* Header */}
       <Navbar />
       {/* Home */}
+      <Home />
     </div>
   );
 }
