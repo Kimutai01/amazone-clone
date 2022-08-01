@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "../product/Product";
 import "./Home.css";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
           alt="Amazon page"
         />
         <div className="home__row">
-          {/* Product */}
+          <Product />
           {/* Product */}
         </div>
         <div className="home__row">
