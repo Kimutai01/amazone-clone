@@ -15,6 +15,7 @@ const Checkout = () => {
         </div>
       </div>
       <div className="checkout__right">
+        <SubTotal />
         <h2>The total will go here</h2>
       </div>
     </div>

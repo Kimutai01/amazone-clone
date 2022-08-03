@@ -54,6 +54,9 @@
   align-items: center;
   color: white;
 }
+.link {
+  text-decoration: none;
+}
 
 .navbar__basketCount {
   margin-left: 10px;
