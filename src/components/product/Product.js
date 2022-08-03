@@ -1,25 +1,25 @@
 import React from "react";
 import "./Product.css";
 
-const Product = () => {
+const Product = ({ title, image, price, rating }) => {
   return (
     <div className="product">
       <div className="product__info">
-        <p>The lean startup</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          <p>🌟</p>
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>🌟</p>
+            ))}
         </div>
-        <img
-          className="product__image"
-          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScpS9dtMChvpksbeqyLbv_CJ0dZuOPK81mmpFhfAly1vEzYBSt"
-          alt=""
-        />
-        <button className="add__button">Add to basket</button>
       </div>
+      <img src={image} alt="the lean startup" />
+      <button>Add to basket</button>
     </div>
   );
 };
