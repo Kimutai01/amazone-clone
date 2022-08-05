@@ -6,7 +6,7 @@ import "./Navbar.css";
 import { useStateValue } from "../../StateProvider";
 
 const Navbar = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="navbar">
       <Link to="/">
@@ -24,7 +24,9 @@ const Navbar = () => {
         <Link className="log" to="/login">
           <div className="navbar__option">
             <span className="navbar__option1">Hello Guest</span>
-            <span className="navbar__option2">Sign in</span>
+            <span className="navbar__option2">
+              {user ? "sign Out" : "sign In"}
+            </span>
           </div>
         </Link>
         <div className="navbar__option">
