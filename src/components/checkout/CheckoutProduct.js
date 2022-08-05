@@ -5,7 +5,7 @@ const CheckoutProduct = ({ id, image, title, price, rating }) => {
   return (
     <div className="checkoutProduct">
       <img src={image} alt="product" />
-      <div className="checkoutProduct__input">
+      <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
         <p className="checkoutProduct__price">
           <small>$</small>
