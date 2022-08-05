@@ -21,10 +21,12 @@ const Navbar = () => {
         <SearchIcon className="navbar__searchIcon" />
       </div>
       <div className="navbar__nav">
-        <div className="navbar__option">
-          <span className="navbar__option1">Hello Guest</span>
-          <span className="navbar__option2">Sign in</span>
-        </div>
+        <Link className="log" to="/login">
+          <div className="navbar__option">
+            <span className="navbar__option1">Hello Guest</span>
+            <span className="navbar__option2">Sign in</span>
+          </div>
+        </Link>
         <div className="navbar__option">
           <span className="navbar__option1">Returns</span>
           <span className="navbar__option2">& orders</span>
